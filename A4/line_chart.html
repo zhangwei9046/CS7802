@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<body>
 <svg width="960" height="500"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
+
 <script>
 
 var svg = d3.select("svg"),
@@ -58,5 +60,27 @@ d3.csv("A4_.csv", function(d) {
       .attr("stroke-width", 1.5)
       .attr("d", line);
 });
-
 </script>
+
+<div>
+  <p>
+    <pre>
+      1) What type of data is each column in the csv?
+        Year: Ordinal
+        Congress: Ordinal
+        PowerBalance: Quantitative
+      2) Please describe the plot (marks, channels, color choices, etc.)
+        Marks: points
+        Channels: vertical position
+        Color: Steerblue
+      3) justify your design decisions
+        Use year as x-axis, power balance as y-axis, to form a line chart.
+      4) what trends do you see in the plot?
+        The chart shows several ups and downs.
+        Before 1926, Republican tends to have more senators; while after 1926, Democrat tends to have more.
+    </pre>
+  </p>  
+  
+</div>
+
+</body>
